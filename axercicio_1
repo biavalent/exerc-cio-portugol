@@ -1,0 +1,73 @@
+
+/* CLIQUE NO SINAL DE "+", À ESQUERDA, PARA EXIBIR A DESCRIÇÃO DO EXEMPLO
+ *  
+ * Copyright (C) 2014 - UNIVALI - Universidade do Vale do Itajaí
+ * 
+ * Este arquivo de código fonte é livre para utilização, cópia e/ou modificação
+ * desde que este cabeçalho, contendo os direitos autorais e a descrição do programa, 
+ * seja mantido.
+ * 
+ * Se tiver dificuldade em compreender este exemplo, acesse as vídeoaulas do Portugol 
+ * Studio para auxiliá-lo:
+ * 
+ * https://www.youtube.com/watch?v=K02TnB3IGnQ&list=PLb9yvNDCid3jQAEbNoPHtPR0SWwmRSM-t
+ * 
+ * Descrição:
+ * 
+ * 	Este exemplo cria e preenche um vetor com números aleatórios. Logo após exibe o vetor
+ * 	no console de duas formas diferentes:
+ * 	
+ * 		a) Na ordem em que os números foram preenchidos
+ * 		b) Na ordem inversa em que os números foram preenchidos
+ * 	
+ * Autores:
+ * 
+ * 	Giordana Maria da Costa Valle
+ * 	Carlos Alexandre Krueger
+ * 	
+ * Data: 01/06/2013
+ */
+
+programa
+{
+	inteiro matricula[8],nr_matricula=0
+  cadeia nome_aluno[8],sobre_aluno[8,nomes, sobrenomes]
+  real nota_1[8], nota_2[8], nota_3[8 ]
+	
+	funcao inicio() 
+	{
+	para( inteiro posicao = 0; posicao<8;posicao++)
+    {
+      escreva("digite a matricula do aluno: ",posicao,"\n")
+      leia(nr_matricula)
+      matricula[posicao]=nr_matricula
+      escreva("digite o nome do aluno: ")
+      leia(nomes)
+      nome_do_aluno[posicao]=nomes
+      escreva("digite o sobrenome do aluno: ")
+      leia(sobrenome)
+      sobrenome_aluno[posicao]=sobrenomes
+      limpa()
+    } 
+    escreva("Vetor na ordem original:\n")
+		
+		// preenche o vetor
+		para (inteiro posicao = 0; posicao < 8; posicao++)
+		{
+      escreva 
+			matricula[posicao] = util.sorteia(1, 100) // Sorteia um número e atribui à posição do vetor
+		}
+
+		// Exibe o vetor na ordem original
+		escreva ("Vetor na ordem original:\n")
+		
+		para(inteiro posicao = 0; posicao < 8; posicao++)
+		{
+			escreva (matricula[posicao], " ")
+		}
+		
+		
+		}
+	}
+}
+
